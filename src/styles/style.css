@@ -1,0 +1,54 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 30px;
+  border: 1px solid;
+  padding: 10px;
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px 0 20px 0;
+  align-items: center;
+}
+
+.grid-item {
+  padding: 10px;
+border: 1px solid;
+  text-align: center;
+}
+
+.text-editor {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  padding: 1%;
+}
+
+.text-editor button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.text-box {
+  font-size: 16px;
+  border: 1px solid;
+  padding: 1.5%;
+}
+
+.text-box input {
+  border: none;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
